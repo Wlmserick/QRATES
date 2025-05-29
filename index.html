@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style.css">
     <title>Qrates</title>
+    
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
     <script src="index.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <ul>
                 <li><img class="logo-ad" src="images/qrates-logo-ad.svg" alt="Qrates"></li>
             </ul>
             <ul class="desktop-nav-mid">
                 <li>Discover</li>
+                <li>Search</li>
                 <li>Why Qrates</li>
                 <li>Cart</li>
             </ul>
             <ul class="desktop-nav-right">
-                <li>Login</li>
-                <li class="make-a-record">Make a Record</li>
+                <li>Log in</li>
+                <li id="make-a-record">Make a Record</li>
             </ul>
             <ul class="mobile-nav">
                 <li><i class="fas fa-shopping-cart"></i></li>
@@ -56,25 +56,25 @@
         </div>
         <section class="no-risk-section">
             <div class="crowdfunding-div">
-                <div>
-                    <img class="crowdfunding-img" src="images/crowdfunding.png" alt="">
-                </div>
-                <div>
+                <div class="content-wrapper">
                     <div class="section-tag">NO RISK, NO WASTE</div>
                     <h2>Crowdfunding</h2>
                     <p>Rally your fans and gather pledges. Press the exact number of records you need, without having to pay anything upfront.</p>
+                </div>
+                <div class="image-wrapper">
+                    <img class="crowdfunding-img" src="images/crowdfunding.png" alt="Crowdfunding illustration">
                     <button>Learn More</button>
                 </div>
             </div>
             <div class="press-sell-div">
-                <div>
-                    <img class="press-sell-img" src="images/press_sell.png" alt="">
-                </div>
-                <div>
+                <div class="content-wrapper">
                     <div class="section-tag get-into-it">Get into it</div>
                     <h2>Press & Sell</h2>
                     <p>Launch your record, sooner. Take pre-orders from fans and we’ll take care of the rest.</p>
-                    <button>Learn More</button> 
+                </div>
+                <div class="image-wrapper">
+                    <img class="press-sell-img" src="images/press_sell.png" alt="Press and Sell illustration">
+                    <button>Learn More</button>
                 </div>
             </div>
         </section>
